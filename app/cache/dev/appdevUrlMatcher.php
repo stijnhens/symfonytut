@@ -106,7 +106,7 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         // event_homepage
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<firstName>[^/]+)/(?P<count>[^/]+)$#s', $pathinfo, $matches)) {
-            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Yoda\\EventBundle\\Controller\\DefaultController::indexAction',)), array('_route' => 'event_homepage'));
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Socialgeo\\EventBundle\\Controller\\DefaultController::indexAction',)), array('_route' => 'event_homepage'));
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: /Users/stijnhens/Sites/socialgeo/app/config/routing_dev.yml
+    resource: /Users/stijnhens/Sites/symfonytut/app/config/routing_dev.yml
