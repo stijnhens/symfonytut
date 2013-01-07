@@ -16,9 +16,9 @@ class __TwigTemplate_137033092feba4dc84c36a3a1d006003 extends Twig_Template
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "Hello ";
+        echo "Hello <strong>";
         echo twig_escape_filter($this->env, (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")), "html", null, true);
-        echo "!
+        echo "</strong>!
 ";
     }
 
